@@ -1,4 +1,4 @@
-FROM openshift/jenkins-slave-base-centos8
+FROM quay.io/openshift/origin-jenkins-agent-base
 
 USER root
 
