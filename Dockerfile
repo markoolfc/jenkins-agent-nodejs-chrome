@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.1
+FROM registry.access.redhat.com/ubi7/ubi
 USER root
 
 RUN curl --silent --location https://rpm.nodesource.com/setup_current.x | bash -
