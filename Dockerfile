@@ -9,11 +9,6 @@ RUN chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
     
 COPY google-chrome.repo /etc/yum.repos.d/ 
-RUN yum --disableplugin=subscription-manager -y install google-chrome-stable && yum clean all -y
-
-RUN chgrp -R 0 /opt/google
-RUN chmod -R g+rw /opt/google
-
-RUN chmod 4755 /opt/google/chrome/chrome-sandbox
+RUN yum --disableplugin=subscription-manager -y install firefox && yum clean all -y
 
 USER 1001
